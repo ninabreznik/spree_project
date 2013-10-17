@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="@name">
+    <meta name="twitter:description" content="@description">
+    <meta name="twitter:image:src" content="@image_url">
+    <meta name="twitter:data1" content="@price">
+  </head>
+
+  <body>
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @product.name %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @product.description %>
+    </p>
+
+    <p>
+      <strong>Image url:</strong>
+      <%= @product.image_url %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @product.price %>
+    </p>
+
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+
+  </body>
+
+</html>
